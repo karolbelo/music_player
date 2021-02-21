@@ -17,11 +17,6 @@ Music* Node::getMusic() {
   return this->music;
 }
 
-//seta endereço da mpusica do elemento
-void Node::setMusic(Music* music) {
-  this->music = music;
-}
-
 //construtor
 Node::Node(std::string title, std::string artist_name){
   music = new Music(title, artist_name);

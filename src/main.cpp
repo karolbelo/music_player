@@ -19,13 +19,15 @@ void showWelcomeMessage() {
 }
 
 void showMenu() {
-  cout << "/nGerenciar músicas no sistema" << endl;
+  cout << "----------------------------" << endl;
+  cout << "Gerenciar músicas no sistema" << endl;
   cout << "----------------------------" << endl;
   cout << "1 - Adicionar música no sistema" << endl;
   cout << "2 - Procurar música no sistema" << endl;
   cout << "3 - Visualizar músicas do sistema" << endl;
   cout << "4 - Remover música do sistema" << endl << endl;
 
+  cout << "-------------------" << endl;
   cout << "Gerenciar playlists"<< endl;
   cout << "-------------------" << endl;
   cout << "5 - Criar playlist" << endl;
@@ -33,6 +35,7 @@ void showMenu() {
   cout << "7 - Tocar playlist" << endl;
   cout << "8 - Remover playlist" << endl << endl;
 
+  cout << "-----------------------------" << endl;
   cout << "Gerenciar músicas em playlist"<< endl;
   cout << "-----------------------------" << endl;
   cout << "9 - Adicionar música à playlist" << endl;
@@ -44,7 +47,9 @@ void showMenu() {
 }
 
 int main() {
+  //lista global do sistema
   LinkedList* linked_list = new LinkedList();
+  //lista de playlists
   Playlists* playlists = new Playlists();
   string music_title = "", artist_name = "", playlist_name = "";
   
@@ -132,9 +137,11 @@ int main() {
       PlaylistNode* playlist_node = playlists->search(playlist_name, true);
       Node* node = playlist_node->getPlaylist()->getLinkedList()->getFirstNode();
       
+      //verifica se playlist existe
       if (playlist_node != nullptr) {
+        //verifica se playlist tem pelo menos uma música
         if (node != nullptr) {
-          cout << "Músicas da playlist" << endl;
+          cout << "Músicas da playlist:" << endl;
         } else {
           cout << "Nenhuma música foi adicionada à playlist." << endl << endl;
         }

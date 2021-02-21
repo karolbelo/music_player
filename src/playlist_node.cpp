@@ -17,11 +17,6 @@ Playlist* PlaylistNode::getPlaylist() {
   return this->playlist;
 }
 
-//seta endereço da playlist
-void PlaylistNode::setPlaylist(Playlist *playlist) {
-  this->playlist = playlist;
-}
-
 //construtor
 PlaylistNode::PlaylistNode(std::string name){
   playlist = new Playlist(name);

@@ -13,7 +13,6 @@ class PlaylistNode {
     PlaylistNode* getNext(); //retorna endereço da próxima playlist
     void setNext(PlaylistNode* next); //seta endereço da próxima playlist
     Playlist* getPlaylist(); //retorna endereço da playlist do elemento
-    void setPlaylist(Playlist* playlist); //seta endereço da playlist do elemento
 
     //construtor e destrutor
     PlaylistNode(std::string name);

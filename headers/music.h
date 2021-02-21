@@ -9,10 +9,7 @@ class Music {
 
   public: 
     std::string getTitle(); //retorna título da música
-    void setTitle(std::string title); //seta título da música
-
     std::string getArtistName(); //retorna nome do artista
-    void setArtistName(std::string artist_name); //seta nome do artista
 
     //construtor e destrutor
     Music(std::string title, std::string artist_name);
