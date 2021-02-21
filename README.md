@@ -9,7 +9,7 @@
 
 ## Sobre
 
-O Music_Player é um gerenciador de músicas e playlists desenvolvido em C++ para a disciplina de Linguagem de Programação I.
+O music_player é um gerenciador de músicas e playlists desenvolvido em C++ para a disciplina de Linguagem de Programação I.
 
 ## Como rodar
 
