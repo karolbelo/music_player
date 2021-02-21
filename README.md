@@ -16,9 +16,11 @@ O music_player é um gerenciador de músicas e playlists desenvolvido em C++ par
 Execute os seguintes comandos no seu terminal:
 
 ```bash
-#para compilar todos os arquivos do projeto 
+#clone o projeto
+$ git clone https://github.com/marianefelix/music_player.git
+#compile o projeto
 $ make
-#para executar o projeto
+#execute o projeto
 $ ./music_player
 #para limpar tudo
 $ make clean
